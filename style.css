@@ -1,0 +1,80 @@
+/* ==== STYLE.CSS ==== */
+/* Desain Minimalis untuk PKM Ransum Pangan */
+
+/* 1. Import Font & Pengaturan Global */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+:root {
+    /* Aksen warna hijau yang segar, cocok untuk produk makanan */
+    --color-accent: #27ae60; 
+    --color-text: #333333;
+    --color-text-light: #777777;
+    --color-bg: #f9f9f9;
+    --color-white: #FFFFFF;
+    --border-light: #eeeeee;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    line-height: 1.7;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+}
+
+.container {
+    max-width: 960px; /* Layout yang lebih ramping untuk kesan minimalis */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-accent);
+}
+
+/* 2. Header & Navigasi */
+.main-header {
+    background: var(--color-white);
+    border-bottom: 1px solid var(--border-light);
+    padding: 20px 0;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+.primary-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px; /* Jarak antar menu */
+}
+
+.primary-nav a {
+    text-decoration: none;
+    color: var(--color-text-light);
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.primary-nav a:hover,
+.primary-nav a.active {
+    color: var(--color-accent); /* Warna aksen saat aktif atau di-hover */
+}
+
+/* 3. Konten Utama (Homepage
