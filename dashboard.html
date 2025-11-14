@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dashboard Greenzy - Energi Terbarukan</title>
+    <link rel="stylesheet" href="style-dashboard.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Holla Grennzy</h1>
+<nav>
+  <ul class="nav-links">
+    <li><a href="index.html">Beranda</a></li>
+    <li><a href="dashboard.html" class="active">Dashboard</a></li>
+    <li><a href="biaya.html">Biaya Pemasangan</a></li>
+    <li><a href="#contact-section">Kontak</a></li>
+    <li><a href="index.html" id="logout">Logout <i class="fas fa-sign-out-alt"></i></a></li>
+  </ul>
+</nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="welcome-section">
+            <h2>Halo, Pengguna Greenzy!</h2>
+            <p>Terima kasih telah bergabung dengan Greenzy. Berikut beberapa informasi terbaru proyek energi terbarukan kami.</p>
+        </section>
+        
+        <section class="info-cards">
+            <article class="card">
+                <i class="fas fa-solar-panel fa-3x"></i>
+                <h3>2634 Panel Terpasang</h3>
+                <p>Jumlah panel surya yang telah kami pasang di berbagai wilayah.</p>
+            </article>
+            <article class="card">
+                <i class="fas fa-leaf fa-3x"></i>
+                <h3>212 Ton CO<sub>2</sub> Terhindar</h3>
+                <p>Pengurangan jejak karbon dari penggunaan panel surya Greenzy.</p>
+            </article>
+            <article class="card">
+                <i class="fas fa-users fa-3x"></i>
+                <h3>430 Pelanggan Puas</h3>
+                <p>Kami bangga melayani secara profesional dan ramah lingkungan.</p>
+            </article>
+        </section>
+
+        <section class="dashboard-gallery" id="gallery-section">
+            <h2>Galeri Panel Surya Proyek Terbaru</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-src="gambar1.jpg">
+                    <img src="gambar1.jpg" alt="Panel Surya 1" />
+                    <div class="overlay">Klik untuk memperbesar</div>
+                </div>
+                <div class="gallery-item" data-src="gambar2.jpg">
+                    <img src="gambar2.jpg" alt="Panel Surya 2" />
+                    <div class="overlay">Klik untuk memperbesar</div>
+                </div>
+                <div class="gallery-item" data-src="gambar1.jpg">
+                    <img src="gambar1.jpg" alt="Panel Surya 3" />
+                    <div class="overlay">Klik untuk memperbesar</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-section" class="contact-section">
+            <h2>Kontak Kami</h2>
+            <form id="contact-form-dashboard">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Pesan:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit" class="submit-btn">Kirim Pesan</button>
+            </form>
+        </section>
+    </main>
+    <iframe 
+    width="320" height="180" 
+    src="https://www.youtube.com/embed/f-4y05MYpu4" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    allowfullscreen
+    style="display: block; margin-left: auto; margin-right: auto;">
+</iframe>
+
+    <footer>
+        <p>&copy; 2023 Greenzy. Semua hak dilindungi.</p>
+    </footer>
+
+    <!-- Modal gambar -->
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img id="modal-img" class="modal-content" />
+        <div id="caption"></div>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

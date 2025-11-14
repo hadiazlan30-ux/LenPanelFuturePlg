@@ -1,0 +1,80 @@
+/* Mengatur seluruh halaman */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5; /* Warna latar belakang abu-abu muda */
+    display: flex; /* Menggunakan flexbox untuk memposisikan */
+    justify-content: center; /* Rata tengah horizontal */
+    align-items: center; /* Rata tengah vertikal */
+    height: 100vh; /* Set tinggi halaman 100% dari layar */
+    margin: 0;
+}
+
+/* Wadah/kartu login */
+.login-container {
+    background-color: #ffffff; /* Warna kartu putih */
+    padding: 2rem; /* Jarak di dalam kartu */
+    border-radius: 10px; /* Membuat sudut membulat */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+    width: 300px;
+    text-align: center; /* Teks di dalam kartu rata tengah */
+}
+
+/* Judul "Login" */
+.login-container h2 {
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+/* Mengatur grup input (label + kotak input) */
+.input-group {
+    margin-bottom: 1rem;
+    text-align: left; /* Teks label rata kiri */
+}
+
+.input-group label {
+    display: block; /* Label berada di baris sendiri */
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.input-group input {
+    width: 100%; /* Lebar input penuh */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box; /* Agar padding tidak merusak lebar */
+}
+
+/* Tombol Login */
+.login-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Warna biru */
+    color: white;
+    font-size: 16px;
+    cursor: pointer; /* Mengubah kursor jadi tangan saat di-hover */
+    transition: background-color 0.3s ease; /* Transisi halus */
+}
+
+/* Efek saat tombol di-hover */
+.login-button:hover {
+    background-color: #0056b3; /* Warna biru lebih gelap */
+}
+
+/* Link di bawah tombol */
+.links {
+    margin-top: 1rem;
+    font-size: 14px;
+}
+
+.links a {
+    color: #007bff;
+    text-decoration: none; /* Hilangkan garis bawah */
+    margin: 0 5px;
+}
+
+.links a:hover {
+    text-decoration: underline; /* Garis bawah saat di-hover */
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Selamat Datang di Greenzy - Energi Terbarukan</title>
+    <style>
+        body, html {
+            margin: 0; padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #4caf50, #8bc34a);
+            height: 100vh;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 1000px;
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 50, 0, 0.5);
+            border-radius: 20px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+        }
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px #1b3a1b;
+        }
+        p.subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+            font-style: italic;
+            text-shadow: 1px 1px 3px #144214;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+        .gallery img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border: 5px solid #aee6a3;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            cursor: pointer;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+        }
+        .btn-dashboard {
+            display: inline-block;
+            margin-top: 40px;
+            padding: 15px 50px;
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #4caf50;
+            background-color: white;
+            border: none;
+            border-radius: 40px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .btn-dashboard:hover {
+            background-color: #388e3c;
+            color: white;
+        }
+        @media(max-width: 680px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            p.subtitle {
+                font-size: 1rem;
+                margin-bottom: 25px;
+            }
+            .gallery img {
+                width: 90vw;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container" role="main">
+        <h1>Selamat Datang di Greenzy</h1>
+        <p class="subtitle">Membangun Masa Depan Energi Terbarukan yang Bersih dan Berkelanjutan</p>
+
+        <div class="gallery" aria-label="Galeri Panel Surya Greenzy">
+            <img src="gambar1.jpg" alt="Panel surya dengan langit cerah yang terang" />
+            <img src="gambar2.jpg" alt="Panel surya dan pekerja memeriksa panel" />
+            <img src="gambar1.jpg" alt="Panel surya dengan langit cerah yang terang, gambar kedua yang sama" />
+        </div>
+
+        <a href="dashboard.html" class="btn-dashboard" role="button" aria-label="Masuk ke Halaman Dashboard Greenzy">Masuk ke Dashboard</a>
+    </div>
+</body>
+</html>
